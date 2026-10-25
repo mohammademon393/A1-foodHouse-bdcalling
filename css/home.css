@@ -1,0 +1,373 @@
+/* =====================================================
+   HOME.CSS  (only for index.html)
+   Sections: hero, features, best dishes, regions strip,
+   regular menu, offers
+===================================================== */
+
+
+/* ---------- 1. HERO ---------- */
+.hero {
+    background: var(--peach);
+    padding: 30px 0 110px;
+    /* extra bottom space so the features card can overlap */
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text h1 {
+    margin-bottom: 28px;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.hero-text h1 span {
+    color: var(--orange);
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.hero-buttons .btn {
+    min-width: 150px;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 50%;
+}
+
+
+/* ---------- 2. FEATURES CARD (overlaps the hero) ---------- */
+.features {
+    position: relative;
+    z-index: 1;
+    margin-top: -60px;
+}
+
+.features-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 24px 30px;
+    background: var(--white);
+    border-radius: 14px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.feature-item i {
+    flex-shrink: 0;
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--peach);
+    color: var(--orange);
+    font-size: 20px;
+}
+
+.feature-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.feature-item p {
+    font-size: 10px;
+    color: var(--grey);
+    line-height: 1.5;
+}
+
+
+/* ---------- 3. BEST DELIVERED DISHES ---------- */
+.best-dishes {
+    padding: 80px 0 50px;
+}
+
+.best-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.best-heading p {
+    max-width: 270px;
+    font-size: 12px;
+    color: var(--grey);
+}
+
+.best-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.best-circle {
+    width: 170px;
+    height: 170px;
+    margin: 0 auto 18px;
+    padding: 8px;
+    border: 2px dashed var(--orange);
+    border-radius: 50%;
+}
+
+.best-circle img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.best-item h3 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.best-item a {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--orange);
+}
+
+
+/* ---------- 4. REGIONS STRIP ---------- */
+.regions {
+    padding: 20px 0;
+}
+
+.regions-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.regions-list li {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.regions-list li::before {
+    content: "✦";
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+
+/* ---------- 5. REGULAR MENU ---------- */
+.regular-menu {
+    padding: 50px 0 60px;
+}
+
+.menu-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.menu-heading p {
+    margin-top: 6px;
+    font-size: 10px;
+    color: var(--grey);
+}
+
+
+/* ---------- 6. OFFERS ---------- */
+.offers {
+    padding: 0 0 80px;
+}
+
+.offers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.offer {
+    padding: 30px;
+    border-radius: 14px;
+}
+
+/* big coupon card on the left */
+.offer-coupon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    background: #ffcaa6;
+    text-align: center;
+    color: var(--white);
+}
+
+.offer-coupon .small-title {
+    font-size: 22px;
+    font-style: italic;
+    color: var(--orange);
+}
+
+.offer-coupon h3 {
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.coupon-ticket {
+    margin: 16px 0 8px;
+    padding: 8px 30px;
+    border: 2px dashed var(--white);
+    border-radius: 8px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.offer-coupon .code {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--orange);
+}
+
+.offers-right {
+    display: grid;
+    gap: 20px;
+}
+
+/* orange special offer banner */
+.offer-special {
+    background: var(--orange);
+    color: var(--white);
+}
+
+.offer-special .tag {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.offer-special h3 {
+    margin: 4px 0;
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.offer-special p {
+    font-size: 12px;
+}
+
+/* brown restaurant banner */
+.offer-restaurant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #6b2f0a;
+    color: #ffc928;
+}
+
+.offer-restaurant .small-title {
+    font-size: 14px;
+    font-style: italic;
+    color: var(--white);
+}
+
+.offer-restaurant h3 {
+    font-size: 36px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+/* ---------- 7. RESPONSIVE ---------- */
+
+/* Tablet */
+@media (max-width: 991px) {
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .features-box {
+        gap: 14px;
+        padding: 20px;
+    }
+
+    .feature-item h3 {
+        font-size: 15px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .hero {
+        padding-bottom: 90px;
+    }
+
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        align-items: center;
+    }
+
+    .hero-image img {
+        max-width: 300px;
+    }
+
+    .features-box {
+        grid-template-columns: 1fr;
+    }
+
+    .best-heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .best-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .regions-list {
+        justify-content: center;
+        gap: 14px 30px;
+    }
+
+    .offers-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .menu-heading {
+        flex-direction: column;
+        gap: 14px;
+    }
+}
