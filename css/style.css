@@ -54,7 +54,7 @@ input {
 /* ---------- 3. LAYOUT HELPERS ---------- */
 .container {
     width: 90%;
-    max-width: 1100px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -123,7 +123,7 @@ input {
 
 /* Logo: "Food" is orange, "Dash." is dark, with a dashed line below */
 .logo {
-    font-size: 22px;
+    font-size:24px;
     font-weight: 700;
     padding-bottom: 2px;
     border-bottom: 2px dashed var(--orange);
