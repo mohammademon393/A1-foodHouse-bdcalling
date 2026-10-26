@@ -113,14 +113,11 @@
     gap: 30px;
     margin-bottom: 50px;
 }
-.best-item{
-    /* background-color: rebeccapurple; */
+
+.best-item {
     width: 350px;
     height: 475px;
     padding: 10px;
-    /* display: grid;
-    align-items: center;
-    justify-content: center; */
 }
 
 .best-heading p {
@@ -140,9 +137,12 @@
     width: 300px;
     height: 300px;
     margin: 0 auto 18px;
-    padding: 8px;
     border: 2px dashed var(--orange);
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .best-circle img {
@@ -150,9 +150,8 @@
     height: 250px;
     border-radius: 50%;
     object-fit: cover;
-    /* width: fit-content; */
-    margin-top: 20px;
-    margin-left: 20px;
+    display: block;
+    margin: 0;
 }
 
 .best-item h3 {
@@ -167,7 +166,6 @@
     font-weight: 500;
     color: var(--orange);
 }
-
 
 /* ---------- 4. REGIONS STRIP ---------- */
 .regions {
@@ -286,7 +284,6 @@
     font-weight: 600;
 }
 
-
 /* ---------- 6. OFFERS ---------- */
 .offers {
     padding: 0 0 80px;
@@ -299,95 +296,22 @@
 }
 
 .offer {
-    padding: 30px;
     border-radius: 14px;
+    overflow: hidden;
+    
 }
 
-/* big coupon card on the left */
-.offer-coupon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 300px;
-    background: #ffcaa6;
-    text-align: center;
-    color: var(--white);
-}
-
-.offer-coupon .small-title {
-    font-size: 22px;
-    font-style: italic;
-    color: var(--orange);
-}
-
-.offer-coupon h3 {
-    font-size: 34px;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-.coupon-ticket {
-    margin: 16px 0 8px;
-    padding: 8px 30px;
-    border: 2px dashed var(--white);
-    border-radius: 8px;
-    font-size: 22px;
-    font-weight: 700;
-}
-
-.offer-coupon .code {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--orange);
+.offer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 14px;
 }
 
 .offers-right {
     display: grid;
     gap: 20px;
-}
-
-/* orange special offer banner */
-.offer-special {
-    background: var(--orange);
-    color: var(--white);
-}
-
-.offer-special .tag {
-    font-size: 12px;
-    letter-spacing: 2px;
-}
-
-.offer-special h3 {
-    margin: 4px 0;
-    font-size: 44px;
-    font-weight: 800;
-    line-height: 1.1;
-}
-
-.offer-special p {
-    font-size: 12px;
-}
-
-/* brown restaurant banner */
-.offer-restaurant {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: #6b2f0a;
-    color: #ffc928;
-}
-
-.offer-restaurant .small-title {
-    font-size: 14px;
-    font-style: italic;
-    color: var(--white);
-}
-
-.offer-restaurant h3 {
-    font-size: 36px;
-    font-weight: 700;
-    font-style: italic;
 }
 
 
