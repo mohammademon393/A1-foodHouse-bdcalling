@@ -384,6 +384,7 @@
 
     .menu-heading {
         flex-direction: column;
+        flex-wrap: wrap;
         gap: 14px;
     }
 }

@@ -1,241 +1,277 @@
-/* =====================================================
-   MENU.CSS  (only for menu.html)
-   The food card itself is in style.css
-===================================================== */
+/* =========================================
+   FOOD CARD — MATCH REFERENCE DESIGN
+========================================= */
 
 .menu-page {
-    padding: 60px 0 90px;
-}
-
-.menu-top {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.menu-top p {
-    margin-top: 6px;
-    font-size: 12px;
-    color: var(--grey);
-}
-
-/* Search box */
-.menu-search {
-    display: flex;
-    align-items: center;
-    gap: 10px;
     width: 100%;
-    max-width: 280px;
-    padding: 6px 6px 6px 16px;
-    border: 1px solid var(--orange);
-    border-radius: 30px;
+    padding: 30px 0 50px;
+    font-family: "Lexend", sans-serif;
+}
+.menu-section-heading{
+    text-align: center;
+    margin: 20px 0;
+}
+.dish{
+    color: #e94b00;
 }
 
-.menu-search input {
-    flex: 1;
-    min-width: 0;
-    border: none;
-    outline: none;
-    background: transparent;
-    font-size: 13px;
-}
-/* ---------- 6. FOOD CARD DESIGN (Matching Image) ---------- */
 .dish-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px 30px;
-    margin-top: 50px;
-    justify-items: center;
+    grid-template-columns: repeat(3, 230px);
+    justify-content: center;
+    align-items: stretch;
+    gap: 28px;
+    width: 100%;
+    margin: 30px auto;
+    padding: 0 20px;
 }
 
+/* Card shape */
 .dish-card {
-    background: #FFF5EE;
-    /* ছবির সাথে মিল রেখে হালকা পিঙ্কিশ/পীচ ব্যাকগ্রাউন্ড */
-    border: 2px dashed var(--orange, #ff5722);
-    /* ওপরে আর্ক/খিলান আকৃতির রাউন্ডেড বর্ডার */
-    border-radius: 130px 130px 24px 24px;
-    padding: 24px 20px 20px;
     width: 100%;
-    max-width: 290px;
+    min-width: 0;
+    box-sizing: border-box;
+
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    padding: 24px 20px 18px;
+
+    background: #fff0e7;
+    border: 2px dashed #ff5700;
+    border-radius: 120px 120px 22px 22px;
+
     text-align: center;
-    box-sizing: border-box;
-    transition: transform 0.3s ease;
 }
 
-.dish-card:hover {
-    transform: translateY(-5px);
-}
-
-/* গোল ছবি পারফেক্ট সেন্টারে */
+/* Food image */
 .dish-image {
-    width: 170px;
-    height: 170px;
-    border-radius: 50%;
+    width: 190px;
+    height: 190px;
+    flex-shrink: 0;
     overflow: hidden;
-    margin-bottom: 16px;
-    background: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+    margin: 0 0 16px;
+
+    background: #ffffff;
+    border: 4px solid #eeeeee;
+    border-radius: 50%;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
 }
 
 .dish-image img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
+    border-radius: 50%;
 }
 
+/* Dish name */
 .dish-card h3 {
-    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 52px;
+    margin: 0 0 12px;
+
+    color: #303030;
+    font-size: 18px;
     font-weight: 700;
-    color: #2b2b2b;
     line-height: 1.3;
-    margin-bottom: 8px;
-    min-height: 42px;
+}
+
+/* Rating */
+.dish-card .stars {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: nowrap;
+    gap: 5px;
+
+    margin: 0 0 19px;
+
+    color: #ffbd00;
+    font-size: 15px;
+    white-space: nowrap;
 }
 
-.stars {
-    margin-bottom: 10px;
-    font-size: 13px;
-    color: #ffb400;
-    /* হলুদ/গোল্ডেন স্টার */
-    display: flex;
-    align-items: center;
-    gap: 2px;
+.dish-card .stars span {
+    margin-left: 3px;
+    color: #999999;
+    font-size: 17px;
+    font-weight: 400;
 }
 
-.stars span {
-    margin-left: 4px;
-    color: #888;
-    font-size: 12px;
-    font-weight: 500;
-}
+/* Price */
+.dish-card .price {
+    margin: 0 0 16px;
 
-.price {
-    font-size: 20px;
-    font-weight: 800;
-    color: #111;
-    margin-bottom: 14px;
-}
-
-/* কোয়ান্টিটি কন্ট্রোল (- 00 +) */
-.qty-control {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
-    margin-bottom: 16px;
-}
-
-.qty-btn {
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    background: var(--orange, #ff5722);
-    color: #fff;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 0.2s;
-}
-
-.qty-btn:hover {
-    opacity: 0.9;
-}
-
-.qty-amount {
-    font-size: 14px;
+    color: #292929;
+    font-size: 27px;
     font-weight: 700;
-    color: #333;
+    line-height: 1.2;
 }
 
-/* ADD TO CART বাটন */
-.add-cart-btn {
+/* Quantity */
+.dish-card .qty-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+    margin: 0 0 15px;
+}
+
+.dish-card .qty-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+    padding: 0;
+
+    border: none;
+    border-radius: 50%;
+    background: #ff5700;
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+.dish-card .qty-btn:hover {
+    background: #e94b00;
+}
+
+.dish-card .qty-amount {
+    min-width: 25px;
+    color: #111111;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+/* Add to cart */
+.dish-card .add-cart-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: 100%;
-    background: var(--orange, #ff5722);
-    color: #fff;
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: 700;
-    padding: 10px 0;
-    border-radius: 20px;
-    letter-spacing: 0.5px;
-    display: inline-block;
-    transition: background 0.3s;
-}
+    min-height: 40px;
+    padding: 10px 8px;
+    box-sizing: border-box;
 
-.add-cart-btn:hover {
-    background: #e04816;
-}
-
-/* ---------- RESPONSIVE DESIGN ---------- */
-@media (max-width: 992px) {
-    .dish-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .dish-grid {
-        grid-template-columns: 1fr;
-    }
-}
-.menu-search button {
-    width: 32px;
-    height: 32px;
-    border: none;
-    border-radius: 50%;
-    background: var(--orange);
-    color: var(--white);
-    cursor: pointer;
-}
-
-/* Category buttons */
-.menu-categories {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 30px;
-}
-
-.category {
-    padding: 8px 20px;
-    border: 1px solid var(--orange);
     border-radius: 30px;
-    font-size: 13px;
-    color: var(--orange);
-    transition: 0.3s;
+    background: #ff5700;
+    color: #ffffff;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    white-space: nowrap;
+
+    transition: background 0.2s ease;
 }
 
-.category:hover,
-.category.active {
-    background: var(--orange);
-    color: var(--white);
+.dish-card .add-cart-btn:hover {
+    background: #e94b00;
 }
 
 
-/* ---------- RESPONSIVE ---------- */
-@media (max-width: 767px) {
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 800px) {
+    .dish-grid {
+        grid-template-columns: repeat(2, minmax(0, 230px));
+        gap: 25px;
+    }
+
+    .dish-card {
+        padding: 22px 18px 17px;
+    }
+
+    .dish-image {
+        width: 175px;
+        height: 175px;
+    }
+
+    .dish-card h3 {
+        font-size: 17px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 520px) {
     .menu-page {
-        padding: 40px 0 70px;
+        padding-top: 25px;
     }
 
-    .menu-top {
-        flex-direction: column;
-        align-items: flex-start;
+    .dish-grid {
+        grid-template-columns: minmax(0, 230px);
+        gap: 25px;
+        padding: 0 15px;
     }
 
-    .menu-search {
-        max-width: 100%;
+    .dish-card {
+        padding: 22px 20px 18px;
+        border-radius: 120px 120px 22px 22px;
+    }
+
+    .dish-image {
+        width: 180px;
+        height: 180px;
+        margin-bottom: 16px;
+    }
+
+    .dish-card h3 {
+        min-height: 52px;
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .dish-card .stars {
+        gap: 5px;
+        margin-bottom: 19px;
+        font-size: 15px;
+    }
+
+    .dish-card .stars span {
+        font-size: 17px;
+    }
+
+    .dish-card .price {
+        font-size: 27px;
+        margin-bottom: 16px;
+    }
+
+    .dish-card .qty-control {
+        gap: 25px;
+        margin-bottom: 15px;
+    }
+
+    .dish-card .qty-btn {
+        width: 38px;
+        height: 38px;
+    }
+
+    .dish-card .add-cart-btn {
+        min-height: 40px;
+        font-size: 11px;
     }
 }
