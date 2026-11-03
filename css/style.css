@@ -311,6 +311,7 @@ input:focus-visible {
     padding: 50px 0 40px;
     background: var(--peach);
     border-top: 2px dashed var(--orange);
+    margin-top: 100px;
 }
 
 .footer-grid {
