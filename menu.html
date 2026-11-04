@@ -9,13 +9,14 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- css files -->
     <link rel="stylesheet" href="./css/menu.css">
-    <!-- <link rel="stylesheet" href="./css/home.css"> -->
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body>
@@ -55,349 +56,257 @@
     </header>
 
 
-    <main>
-        <!-- ============== Section-1 =============== -->
-        <section class="menu-page">
+    <main class="menu-main">
+
+        <!-- ============== Best Popular ============== -->
+        <section class="menu-section">
             <div class="menu-section-heading">
-                <h2>Our <span class="dish">Best Popular</span> <br>
-                    Indian Dish
-                </h2>
+                <h2>Our <span class="dish">Best Popular</span> Indian Dish</h2>
             </div>
-        
+
             <div class="dish-grid">
-        
-                <!-- Card 1 -->
-                <article class="dish-card custom">
+
+                <article class="dish-card">
                     <div class="dish-image">
-                        <img src="./images/item1.png" alt="Indian vegetable pulao">
+                        <img src="./images/item1.png" alt="Indian vegetable pulao" width="190" height="190" loading="lazy">
                     </div>
-                    <h3>Indian Vegetable<br>Pulao</h3>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                    <h3>Indian Vegetable Pulao</h3>
+                    <div class="stars" role="img" aria-label="5 out of 5 stars, 50 reviews">
+                        <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
                         <span>(50)</span>
                     </div>
-                    <div class="price">₹200</div>
-        
-                    <div class="qty-control">
-                        <button class="qty-btn">-</button>
-                        <span class="qty-amount">00</span>
-                        <button class="qty-btn">+</button>
-                    </div>
-        
-                    <a href="./cart.html" class="add-cart-btn">ADD TO CART</a>
-                </article>
-        
-                <!-- Card 2 -->
-                <article class="dish-card custom" >
-                    <div class="dish-image">
-                        <img src="./images/item2.png" alt="Paneer bhuna masala">
-                    </div>
-                    <h3>Paneer Bhuna<br>Masala</h3>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>(50)</span>
-                    </div>
-                    <div class="price">₹200</div>
-        
-                    <div class="qty-control">
-                        <button class="qty-btn">-</button>
-                        <span class="qty-amount">00</span>
-                        <button class="qty-btn">+</button>
-                    </div>
-        
-                    <a href="./cart.html" class="add-cart-btn">ADD TO CART</a>
-                </article>
-        
-                <!-- Card 3 -->
-                <article class="dish-card custom">
-                    <div class="dish-image">
-                        <img src="./images/item3.png" alt="Vermicelli upma">
-                    </div>
-                    <h3>Vermicelli<br>Upma</h3>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>(50)</span>
-                    </div>
-                    <div class="price">₹200</div>
-        
-                    <div class="qty-control">
-                        <button class="qty-btn">-</button>
-                        <span class="qty-amount">00</span>
-                        <button class="qty-btn">+</button>
-                    </div>
-        
-                    <a href="./cart.html" class="add-cart-btn">ADD TO CART</a>
-                </article>
-        
-            </div>
-        </section>
-        <!-- ============== Section-2 =============== -->
-        <section class="menu-page">
-            <div class="menu-section-heading">
-                <h2>Our <span class="dish">Snacks</span> 
-                    Menu
-                </h2>
-            </div>
-        
-            <div class="dish-grid">
-        
-                <!-- Card 1 -->
-                <article class="dish-card custom">
-                    <div class="dish-image">
-                        <img src="./images/item1.png" alt="Indian vegetable pulao">
-                    </div>
-                    <h3>Indian Vegetable<br>Pulao</h3>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>(50)</span>
-                    </div>
-                    <div class="price">₹200</div>
-        
-                    <div class="qty-control">
-                        <button class="qty-btn">-</button>
-                        <span class="qty-amount">00</span>
-                        <button class="qty-btn">+</button>
-                    </div>
-        
-                    <a href="./cart.html" class="add-cart-btn">ADD TO CART</a>
-                </article>
-        
-                <!-- Card 2 -->
-                <article class="dish-card custom">
-                    <div class="dish-image">
-                        <img src="./images/item2.png" alt="Paneer bhuna masala">
-                    </div>
-                    <h3>Paneer Bhuna<br>Masala</h3>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>(50)</span>
-                    </div>
-                    <div class="price">₹200</div>
-        
-                    <div class="qty-control">
-                        <button class="qty-btn">-</button>
-                        <span class="qty-amount">00</span>
-                        <button class="qty-btn">+</button>
-                    </div>
-        
-                    <a href="./cart.html" class="add-cart-btn">ADD TO CART</a>
-                </article>
-        
-                <!-- Card 3 -->
-                <article class="dish-card custom">
-                    <div class="dish-image">
-                        <img src="./images/item3.png" alt="Vermicelli upma">
-                    </div>
-                    <h3>Vermicelli<br>Upma</h3>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>(50)</span>
-                    </div>
-                    <div class="price">₹200</div>
-        
-                    <div class="qty-control">
-                        <button class="qty-btn">-</button>
-                        <span class="qty-amount">00</span>
-                        <button class="qty-btn">+</button>
-                    </div>
-        
-                    <a href="./cart.html" class="add-cart-btn">ADD TO CART</a>
-                </article>
-        
-            </div>
-        </section>
-        <!-- ============== Section-3 =============== -->
-        <section class="menu-page">
-            <div class="menu-section-heading">
-                <h2>Our <span class="dish">regular</span> menu
-                </h2>
-            </div>
-        
-            <div class="dish-grid">
-        
-                <!-- Card 1 -->
-                <article class="dish-card custom">
-                    <div class="dish-image">
-                        <img src="./images/item1.png" alt="Indian vegetable pulao">
-                    </div>
-                    <h3>Indian Vegetable<br>Pulao</h3>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>(50)</span>
-                    </div>
-                    <div class="price">₹200</div>
-        
-                    <div class="qty-control">
-                        <button class="qty-btn">-</button>
-                        <span class="qty-amount">00</span>
-                        <button class="qty-btn">+</button>
-                    </div>
-        
-                    <a href="./cart.html" class="add-cart-btn">ADD TO CART</a>
-                </article>
-        
-                <!-- Card 2 -->
-                <article class="dish-card custom">
-                    <div class="dish-image">
-                        <img src="./images/item2.png" alt="Paneer bhuna masala">
-                    </div>
-                    <h3>Paneer Bhuna<br>Masala</h3>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>(50)</span>
-                    </div>
-                    <div class="price">₹200</div>
-        
+                    <p class="price">₹200</p>
                     <div class="qty-control">
                         <button type="button" class="qty-btn" aria-label="Decrease quantity">−</button>
-                    
-                        <span class="qty-amount">00</span>
-                    
+                        <span class="qty-amount" aria-live="polite">00</span>
                         <button type="button" class="qty-btn" aria-label="Increase quantity">+</button>
                     </div>
-        
                     <a href="./cart.html" class="add-cart-btn">ADD TO CART</a>
                 </article>
-        
-                <!-- Card 3 -->
-                <article class="dish-card custom">
+
+                <article class="dish-card">
                     <div class="dish-image">
-                        <img src="./images/item3.png" alt="Vermicelli upma">
+                        <img src="./images/item2.png" alt="Paneer bhuna masala" width="190" height="190" loading="lazy">
                     </div>
-                    <h3>Vermicelli<br>Upma</h3>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                    <h3>Paneer Bhuna Masala</h3>
+                    <div class="stars" role="img" aria-label="5 out of 5 stars, 50 reviews">
+                        <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
                         <span>(50)</span>
                     </div>
-                    <div class="price">₹200</div>
-        
+                    <p class="price">₹200</p>
                     <div class="qty-control">
-                        <button class="qty-btn">-</button>
-                        <span class="qty-amount">00</span>
-                        <button class="qty-btn">+</button>
+                        <button type="button" class="qty-btn" aria-label="Decrease quantity">−</button>
+                        <span class="qty-amount" aria-live="polite">00</span>
+                        <button type="button" class="qty-btn" aria-label="Increase quantity">+</button>
                     </div>
-        
                     <a href="./cart.html" class="add-cart-btn">ADD TO CART</a>
                 </article>
-        
-            </div>
-            <div class="custom2">
-                <div class="dish-grid">
-                
-                    <!-- Card 1 -->
-                    <article class="dish-card custom">
-                        <div class="dish-image">
-                            <img src="./images/item1.png" alt="Indian vegetable pulao">
-                        </div>
-                        <h3>Indian Vegetable<br>Pulao</h3>
-                        <div class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <span>(50)</span>
-                        </div>
-                        <div class="price">₹200</div>
-                
-                        <div class="qty-control">
-                            <button class="qty-btn">-</button>
-                            <span class="qty-amount">00</span>
-                            <button class="qty-btn">+</button>
-                        </div>
-                
-                        <a href="./cart.html" class="add-cart-btn">ADD TO CART</a>
-                    </article>
-                
-                    <!-- Card 2 -->
-                    <article class="dish-card custom">
-                        <div class="dish-image">
-                            <img src="./images/item2.png" alt="Paneer bhuna masala">
-                        </div>
-                        <h3>Paneer Bhuna<br>Masala</h3>
-                        <div class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <span>(50)</span>
-                        </div>
-                        <div class="price">₹200</div>
-                
-                        <div class="qty-control">
-                            <button class="qty-btn">-</button>
-                            <span class="qty-amount">00</span>
-                            <button class="qty-btn">+</button>
-                        </div>
-                
-                        <a href="./cart.html" class="add-cart-btn">ADD TO CART</a>
-                    </article>
-                
-                    <!-- Card 3 -->
-                    <article class="dish-card custom">
-                        <div class="dish-image">
-                            <img src="./images/item3.png" alt="Vermicelli upma">
-                        </div>
-                        <h3>Vermicelli<br>Upma</h3>
-                        <div class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <span>(50)</span>
-                        </div>
-                        <div class="price">₹200</div>
-                
-                        <div class="qty-control">
-                            <button class="qty-btn">-</button>
-                            <span class="qty-amount">00</span>
-                            <button class="qty-btn">+</button>
-                        </div>
-                
-                        <a href="./cart.html" class="add-cart-btn">ADD TO CART</a>
-                    </article>
-                
-                </div>
+
+                <article class="dish-card">
+                    <div class="dish-image">
+                        <img src="./images/item3.png" alt="Vermicelli upma" width="190" height="190" loading="lazy">
+                    </div>
+                    <h3>Vermicelli Upma</h3>
+                    <div class="stars" role="img" aria-label="5 out of 5 stars, 50 reviews">
+                        <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <span>(50)</span>
+                    </div>
+                    <p class="price">₹200</p>
+                    <div class="qty-control">
+                        <button type="button" class="qty-btn" aria-label="Decrease quantity">−</button>
+                        <span class="qty-amount" aria-live="polite">00</span>
+                        <button type="button" class="qty-btn" aria-label="Increase quantity">+</button>
+                    </div>
+                    <a href="./cart.html" class="add-cart-btn">ADD TO CART</a>
+                </article>
+
             </div>
         </section>
+
+        <!-- ============== Snacks ============== -->
+        <section class="menu-section">
+            <div class="menu-section-heading">
+                <h2>Our <span class="dish">Snacks</span> Menu</h2>
+            </div>
+
+            <div class="dish-grid">
+
+                <article class="dish-card">
+                    <div class="dish-image">
+                        <img src="./images/item1.png" alt="Indian vegetable pulao" width="190" height="190" loading="lazy">
+                    </div>
+                    <h3>Indian Vegetable Pulao</h3>
+                    <div class="stars" role="img" aria-label="5 out of 5 stars, 50 reviews">
+                        <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <span>(50)</span>
+                    </div>
+                    <p class="price">₹200</p>
+                    <div class="qty-control">
+                        <button type="button" class="qty-btn" aria-label="Decrease quantity">−</button>
+                        <span class="qty-amount" aria-live="polite">00</span>
+                        <button type="button" class="qty-btn" aria-label="Increase quantity">+</button>
+                    </div>
+                    <a href="./cart.html" class="add-cart-btn">ADD TO CART</a>
+                </article>
+
+                <article class="dish-card">
+                    <div class="dish-image">
+                        <img src="./images/item2.png" alt="Paneer bhuna masala" width="190" height="190" loading="lazy">
+                    </div>
+                    <h3>Paneer Bhuna Masala</h3>
+                    <div class="stars" role="img" aria-label="5 out of 5 stars, 50 reviews">
+                        <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <span>(50)</span>
+                    </div>
+                    <p class="price">₹200</p>
+                    <div class="qty-control">
+                        <button type="button" class="qty-btn" aria-label="Decrease quantity">−</button>
+                        <span class="qty-amount" aria-live="polite">00</span>
+                        <button type="button" class="qty-btn" aria-label="Increase quantity">+</button>
+                    </div>
+                    <a href="./cart.html" class="add-cart-btn">ADD TO CART</a>
+                </article>
+
+                <article class="dish-card">
+                    <div class="dish-image">
+                        <img src="./images/item3.png" alt="Vermicelli upma" width="190" height="190" loading="lazy">
+                    </div>
+                    <h3>Vermicelli Upma</h3>
+                    <div class="stars" role="img" aria-label="5 out of 5 stars, 50 reviews">
+                        <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <span>(50)</span>
+                    </div>
+                    <p class="price">₹200</p>
+                    <div class="qty-control">
+                        <button type="button" class="qty-btn" aria-label="Decrease quantity">−</button>
+                        <span class="qty-amount" aria-live="polite">00</span>
+                        <button type="button" class="qty-btn" aria-label="Increase quantity">+</button>
+                    </div>
+                    <a href="./cart.html" class="add-cart-btn">ADD TO CART</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ============== Regular Menu (6 dishes, ONE grid) ============== -->
+        <section class="menu-section">
+            <div class="menu-section-heading">
+                <h2>Our <span class="dish">Regular</span> Menu</h2>
+            </div>
+
+            <div class="dish-grid">
+
+                <article class="dish-card">
+                    <div class="dish-image">
+                        <img src="./images/item1.png" alt="Indian vegetable pulao" width="190" height="190" loading="lazy">
+                    </div>
+                    <h3>Indian Vegetable Pulao</h3>
+                    <div class="stars" role="img" aria-label="5 out of 5 stars, 50 reviews">
+                        <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <span>(50)</span>
+                    </div>
+                    <p class="price">₹200</p>
+                    <div class="qty-control">
+                        <button type="button" class="qty-btn" aria-label="Decrease quantity">−</button>
+                        <span class="qty-amount" aria-live="polite">00</span>
+                        <button type="button" class="qty-btn" aria-label="Increase quantity">+</button>
+                    </div>
+                    <a href="./cart.html" class="add-cart-btn">ADD TO CART</a>
+                </article>
+
+                <article class="dish-card">
+                    <div class="dish-image">
+                        <img src="./images/item2.png" alt="Paneer bhuna masala" width="190" height="190" loading="lazy">
+                    </div>
+                    <h3>Paneer Bhuna Masala</h3>
+                    <div class="stars" role="img" aria-label="5 out of 5 stars, 50 reviews">
+                        <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <span>(50)</span>
+                    </div>
+                    <p class="price">₹200</p>
+                    <div class="qty-control">
+                        <button type="button" class="qty-btn" aria-label="Decrease quantity">−</button>
+                        <span class="qty-amount" aria-live="polite">00</span>
+                        <button type="button" class="qty-btn" aria-label="Increase quantity">+</button>
+                    </div>
+                    <a href="./cart.html" class="add-cart-btn">ADD TO CART</a>
+                </article>
+
+                <article class="dish-card">
+                    <div class="dish-image">
+                        <img src="./images/item3.png" alt="Vermicelli upma" width="190" height="190" loading="lazy">
+                    </div>
+                    <h3>Vermicelli Upma</h3>
+                    <div class="stars" role="img" aria-label="5 out of 5 stars, 50 reviews">
+                        <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <span>(50)</span>
+                    </div>
+                    <p class="price">₹200</p>
+                    <div class="qty-control">
+                        <button type="button" class="qty-btn" aria-label="Decrease quantity">−</button>
+                        <span class="qty-amount" aria-live="polite">00</span>
+                        <button type="button" class="qty-btn" aria-label="Increase quantity">+</button>
+                    </div>
+                    <a href="./cart.html" class="add-cart-btn">ADD TO CART</a>
+                </article>
+
+                <article class="dish-card">
+                    <div class="dish-image">
+                        <img src="./images/item1.png" alt="Indian vegetable pulao" width="190" height="190" loading="lazy">
+                    </div>
+                    <h3>Indian Vegetable Pulao</h3>
+                    <div class="stars" role="img" aria-label="5 out of 5 stars, 50 reviews">
+                        <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <span>(50)</span>
+                    </div>
+                    <p class="price">₹200</p>
+                    <div class="qty-control">
+                        <button type="button" class="qty-btn" aria-label="Decrease quantity">−</button>
+                        <span class="qty-amount" aria-live="polite">00</span>
+                        <button type="button" class="qty-btn" aria-label="Increase quantity">+</button>
+                    </div>
+                    <a href="./cart.html" class="add-cart-btn">ADD TO CART</a>
+                </article>
+
+                <article class="dish-card">
+                    <div class="dish-image">
+                        <img src="./images/item2.png" alt="Paneer bhuna masala" width="190" height="190" loading="lazy">
+                    </div>
+                    <h3>Paneer Bhuna Masala</h3>
+                    <div class="stars" role="img" aria-label="5 out of 5 stars, 50 reviews">
+                        <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <span>(50)</span>
+                    </div>
+                    <p class="price">₹200</p>
+                    <div class="qty-control">
+                        <button type="button" class="qty-btn" aria-label="Decrease quantity">−</button>
+                        <span class="qty-amount" aria-live="polite">00</span>
+                        <button type="button" class="qty-btn" aria-label="Increase quantity">+</button>
+                    </div>
+                    <a href="./cart.html" class="add-cart-btn">ADD TO CART</a>
+                </article>
+
+                <article class="dish-card">
+                    <div class="dish-image">
+                        <img src="./images/item3.png" alt="Vermicelli upma" width="190" height="190" loading="lazy">
+                    </div>
+                    <h3>Vermicelli Upma</h3>
+                    <div class="stars" role="img" aria-label="5 out of 5 stars, 50 reviews">
+                        <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <span>(50)</span>
+                    </div>
+                    <p class="price">₹200</p>
+                    <div class="qty-control">
+                        <button type="button" class="qty-btn" aria-label="Decrease quantity">−</button>
+                        <span class="qty-amount" aria-live="polite">00</span>
+                        <button type="button" class="qty-btn" aria-label="Increase quantity">+</button>
+                    </div>
+                    <a href="./cart.html" class="add-cart-btn">ADD TO CART</a>
+                </article>
+
+            </div>
+        </section>
+
     </main>
 
 
